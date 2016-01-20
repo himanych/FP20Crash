@@ -3,7 +3,7 @@ FlashPlayer 20.0.0.267 crashes randomly without any clear error, just hangs up a
 
 We actively use movieClip's timeline for creating and handling user interfaces.
 We analized cases, when it occurs and have done test project, which always reproduces the crash.
-All we do is repeatedly call gotoAndStop to different frames for selected movieclip with different hierarchical structure of children with their own timelines. And at the same time we repeatedly load images, create and clear loaders to make GarbageCollector work hardly.
+All we do is repeatedly call gotoAndStop to different frames for selected movieclip with different hierarchical structure of children with their own timelines. And at the same time we repeatedly load images, create and clear loaders to make GarbageCollector work very intensely.
 
 GitHub repository with source code and binary result: https://github.com/himanych/FP20Crash
 
