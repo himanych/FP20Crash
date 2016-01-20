@@ -20,11 +20,10 @@ package {
 	import flash.utils.setInterval;
 	import flash.utils.setTimeout;
 	
-	
 	[SWF(width="800", height="600", frameRate="60")]
 	public class FP20Crash extends Sprite {
 		
-		[Embed(source='FP20Crash.swf', symbol='friendsList')]
+		[Embed(source='./assets/FP20CrashSkin.swf', symbol='friendsList')]
 		private const clipClass:Class;
 		private const m_clip:MovieClip = new clipClass() as MovieClip;
 		
